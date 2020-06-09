@@ -16,6 +16,12 @@ body{
 	float: left;
 	margin: 10px 0 0 0;
 }
+#fb_logo{
+	background: url('../img/fb_logo.png') no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 10px 0 0 0;
+}
 #nav-list{
 	margin-top: 60px;
 	margin-right: 60px: 
@@ -41,14 +47,32 @@ body{
 .navbar-header button.navabar-toggle{
 	clear: both;
 }
+.fb_logo{
+		width: 50px;
+		height: 50px;		
+		float: left;
+	}
+	.insta_logo{
+		width: 50px;
+		height: 50px;		
+		float: left;
+	}	
+	.tw_logo{
+		width: 50px;
+		height: 50px;		
+		float: left;
+	}
 /*******Large devices only******/
-@media(min-height: 1200px){
+@media(min-width: 1200px){
 	.jumbotron{
 		background: url('./img/img_1.jpg') no-repeat;
 		height: 675px;
 		box-shadow: 0 0 50px #3F0c1f;
 	}
+	
+
 }
+
 /*******extra small devices only******/
 @media(max-width: 767px){
 	.navbar-brand{
@@ -78,5 +102,5 @@ body{
 	.navbar-header{
 		margin-bottom: 0;
 		margin-top: 0;
-	}
+	}	
 }

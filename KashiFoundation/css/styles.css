@@ -9,7 +9,9 @@ body{
 	border-radius: 10px;
 	border: 0;
 }
-
+#copyright{
+	background-color: grey;
+}
 #fb_logo{
 	background: url('img/fb_logo.png') no-repeat;
 	width: 100px;
@@ -84,37 +86,71 @@ body{
 
 	}
 	#collapsable-nav a{
-		font-size: 0.75em;
+		font-size: 0.85em;
 	}
 }
 /*******small devices only******/
 @media(min-width: 768px) and (max-width: 991px){
+	.navbar-brand{
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand a:hover,.navbar-brand a:focus{
+		text-decoration: none;
+	}
+	.navbar-brand h1{
+		padding-top: 10px;
+		font-size: 1.33em;
+		color: #000;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	#nav-list li a{
+		margin-top: -15px;
+	}
+
+	#collapsable-nav a{
+		font-size: 0.99em;
+	}
+
+	#collapsable-nav a span{
+		font-size: 0.99em;
+	}
 }
 /*******extra small devices only******/
 @media(max-width: 767px){
 	.navbar-brand{
 		padding-top: 10px;
-		height: 80px;
+		height: 60px;
 	}
 	.navbar-brand h1{
-		padding-top: 10px;
-		font-size: 5vw;
+		padding-top: 5px;
+		font-size: 4vw;
 		color: #000;
 		text-transform: uppercase;
 		font-weight: bold;
-		
-
 	}
+	
 	.navbar-brand a:hover,.navbar-brand a:focus{
 		text-decoration: none;
 	}
+	.navbar-toggle{
+		margin-top: 30px;
+	}
+	#collapsable-nav a{
+		font-size: .75em;
+	}
 	
+	#collapsable-nav a span{
+		font-size: .99em;
+	}
 	#collapsable-nav{
-		font-size: 1.25em;
+		font-size: 5vw;
 	}
 	#nav-list li a{
-		margin-top: -20px;
+		margin-top: -8px;
 	}
+
 	.navbar-header{
 		margin-bottom: 0;
 		margin-top: 0;

@@ -2,22 +2,29 @@ body{
 	font-size: 16px;
 	font-family: 'Oxygen',san-serif;
 	color: #000;
-	background-color: #f0622f;
+	background-color: #ff622f;
 }
 #header-nav{
 	background-color: #f74329;
 	border-radius: 10px;
 	border: 0;
 }
-
+#logo-img{
+	background: url('../img/logo.png') no-repeat;
+	width: 190px;
+	height: 180px;
+	float: left;
+	margin: 10px 0 0 0;
+}
 #fb_logo{
-	background: url('img/fb_logo.png') no-repeat;
+	background: url('../img/fb_logo.png') no-repeat;
 	width: 100px;
 	height: 100px;
 	margin: 10px 0 0 0;
 }
 #nav-list{
-	margin-top: 40px;
+	margin-top: 60px;
+	margin-right: 60px: 
 }
 #nav-list a{
 	color: #951C49;
@@ -29,6 +36,10 @@ body{
 #nav-list a span{
 	font-size: 1.8em;
 }
+.navbar-header{
+	margin-bottom: -50px;
+	margin-top: -40px;
+}
 .navbar-header button.navabar-toggle, .navbar-header .icon-bar{
 	border: 1px solid #fff;
 	color: #ff622f;
@@ -37,59 +48,31 @@ body{
 	clear: both;
 }
 .fb_logo{
-	width: 50px;
-	height: 50px;		
-	float: left;
-}
-.insta_logo{
-	width: 50px;
-	height: 50px;		
-	float: left;
-}	
-.tw_logo{
-	width: 50px;
-	height: 50px;		
-	float: left;
-}
-.copyright-text {
-    display: inline-block;
-    margin-right: 0.75rem;
-    margin-left: 0rem;
-}
+		width: 50px;
+		height: 50px;		
+		float: left;
+	}
+	.insta_logo{
+		width: 50px;
+		height: 50px;		
+		float: left;
+	}	
+	.tw_logo{
+		width: 50px;
+		height: 50px;		
+		float: left;
+	}
 /*******Large devices only******/
 @media(min-width: 1200px){
-	
-	#logo-img{
-	background: url('../img/logo.png') no-repeat;
-	margin: 10px 0 0 0;
-	}
 	.jumbotron{
-		box-shadow: 0 0 50px #3F0c1f;
-	} 
-}
-/*******medium devices only******/
-@media(min-width: 992px) and (max-width: 1199px){
-	#logo-img{
-	background: url('../img/logo.png') no-repeat;
-	width: 100px;
-	height: 100px;
-	margin: 5px 5px 5px 0;
-	}
-	.jumbotron{		
+		background: url('./img/img_1.jpg') no-repeat;
+		height: 675px;
 		box-shadow: 0 0 50px #3F0c1f;
 	}
 	
-	.navbar-brand a:hover,.navbar-brand a:focus{
-		text-decoration: none;
 
-	}
-	#collapsable-nav a{
-		font-size: 0.75em;
-	}
 }
-/*******small devices only******/
-@media(min-width: 768px) and (max-width: 991px){
-}
+
 /*******extra small devices only******/
 @media(max-width: 767px){
 	.navbar-brand{
@@ -100,24 +83,24 @@ body{
 		padding-top: 10px;
 		font-size: 5vw;
 		color: #000;
-		text-transform: uppercase;
-		font-weight: bold;
-		
-
 	}
 	.navbar-brand a:hover,.navbar-brand a:focus{
 		text-decoration: none;
 	}
-	
+	#collapsable-nav a{
+		font-size: 5vw;
+	}
+	#collapsable-nav a span{
+		font-size: 5vw;
+	}
 	#collapsable-nav{
-		font-size: 1.25em;
+		font-size: 5vw;
 	}
 	#nav-list li a{
-		margin-top: -20px;
+		margin-top: -10px;
 	}
 	.navbar-header{
 		margin-bottom: 0;
 		margin-top: 0;
 	}	
-	
 }

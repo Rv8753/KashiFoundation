@@ -1,43 +1,83 @@
+html { overflow-y: scroll; }
 body{
 	font-size: 16px;
 	font-family: 'Oxygen',san-serif;
-	color: #000;
-	background-color: #f0622f;
+	margin: 0;
+	padding: 0;
+	display: block;
 }
 #header-nav{
-	background-color: #f74329;
-	border-radius: 10px;
-	border: 0;
+  background: rgba(0, 214, 170, .25);
+}
+header {
+  text-align: left;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+#footer{
+	background: rgba(0, 214, 170, .25);
 }
 #copyright{
-	background-color: grey;
+	background: rgba(0, 214, 170, .25);
+} 
+.about_,.gallery_{
+	margin-top: 20px;
+	background-color:transparent;
 }
-#fb_logo{
-	background: url('img/fb_logo.png') no-repeat;
-	width: 100px;
-	height: 100px;
-	margin: 10px 0 0 0;
+.about_ ul,.gallery_ ul{
+	background: transparent;
+	background: rgba(0, 214, 170, .25);
+	border-radius: 12px;
 }
-#nav-list{
-	margin-top: 40px;
+#collapsable-nav ul a,.about_,.gallery_{
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2vw;
+  text-transform: uppercase;
+  opacity: 1;
+  transition: opacity 150ms ease-in-out;
 }
-#nav-list a{
-	color: #951C49;
-	text-align: center;
+#nav-list a:hover,.gallery_ ul a:hover,.about_ ul a:hover {
+  color: #fff;
+  background: transparent;
 }
+.founder_:hover{
+	opacity: 0.9;
+}
+#img_founder{
+	
+	height: 200px;
+	background: url('../img/img_founder.jpg') no-repeat;
+	background-size: contain;
+	border-radius: 10px;
+}
+#founder{
+	background: url('../img/img_1.jpg') no-repeat;
+	height: 200px;
+}
+/*
 #nav-list a:hover{
 	background: #E7E7E7;
+	opacity: 1;
 }
 #nav-list a span{
 	font-size: 1.8em;
+	opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+
 }
 .navbar-header button.navabar-toggle, .navbar-header .icon-bar{
 	border: 1px solid #fff;
 	color: #ff622f;
 }
+.navbar-header{
+	background-color: #929fba ;
+}
 .navbar-header button.navabar-toggle{
 	clear: both;
 }
+*/
 .fb_logo{
 	width: 50px;
 	height: 50px;		
@@ -53,10 +93,15 @@ body{
 	height: 50px;		
 	float: left;
 }
-.copyright-text {
-    display: inline-block;
-    margin-right: 0.75rem;
-    margin-left: 0rem;
+
+.jumbotron{
+	margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    background-image: url('../img/img_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 /*******Large devices only******/
 @media(min-width: 1200px){
@@ -65,9 +110,9 @@ body{
 	background: url('../img/logo.png') no-repeat;
 	margin: 10px 0 0 0;
 	}
-	.jumbotron{
-		box-shadow: 0 0 50px #3F0c1f;
-	} 
+	#collapsable-nav a{
+		font-size: 2vw;
+	}
 }
 /*******medium devices only******/
 @media(min-width: 992px) and (max-width: 1199px){
@@ -75,74 +120,60 @@ body{
 	background: url('../img/logo.png') no-repeat;
 	width: 100px;
 	height: 100px;
-	margin: 5px 5px 5px 0;
-	}
-	.jumbotron{		
-		box-shadow: 0 0 50px #3F0c1f;
-	}
 	
+	}	
 	.navbar-brand a:hover,.navbar-brand a:focus{
 		text-decoration: none;
 
 	}
 	#collapsable-nav a{
-		font-size: 0.85em;
+		font-size: 2vw;
 	}
 }
 /*******small devices only******/
 @media(min-width: 768px) and (max-width: 991px){
+	
 	.navbar-brand{
-		padding-top: 10px;
-		height: 80px;
+		
 	}
 	.navbar-brand a:hover,.navbar-brand a:focus{
 		text-decoration: none;
 	}
 	.navbar-brand h1{
-		padding-top: 10px;
-		font-size: 1.33em;
+		padding-top: 0;
+		font-size: 2.4vw;
 		color: #000;
 		text-transform: uppercase;
 		font-weight: bold;
 	}
-	#nav-list li a{
-		margin-top: -15px;
-	}
-
+	
 	#collapsable-nav a{
-		font-size: 0.99em;
+		font-size: 2vw;
 	}
 
-	#collapsable-nav a span{
-		font-size: 0.99em;
-	}
 }
 /*******extra small devices only******/
 @media(max-width: 767px){
 	.navbar-brand{
-		padding-top: 10px;
 		height: 60px;
 	}
 	.navbar-brand h1{
-		padding-top: 5px;
+		margin-top:0;
 		font-size: 4vw;
 		color: #000;
 		text-transform: uppercase;
 		font-weight: bold;
-	}
+	}.about_,.gallery_{
+	margin-top: 0;
+}
 	
 	.navbar-brand a:hover,.navbar-brand a:focus{
 		text-decoration: none;
 	}
-	.navbar-toggle{
-		margin-top: 30px;
-	}
-	#collapsable-nav a{
-		font-size: .75em;
-	}
 	
-	#collapsable-nav a span{
-		font-size: .99em;
+	#collapsable-nav a{
+		font-size: 3.2vw;
+		text-align: center;
 	}
 	#collapsable-nav{
 		font-size: 5vw;

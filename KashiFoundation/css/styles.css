@@ -38,7 +38,7 @@ header {
   opacity: 1;
   transition: opacity 150ms ease-in-out;
 }
-#nav-list a:hover,.gallery_ ul a:hover,.about_ ul a:hover {
+#nav-list ul a:hover,.gallery_ ul a:hover,.about_ ul a:hover {
   color: #fff;
   background: transparent;
 }
@@ -171,12 +171,15 @@ header {
 		text-decoration: none;
 	}
 	
-	#collapsable-nav a{
-		font-size: 3.2vw;
-		text-align: center;
+	#collapsable-nav ul a,.about_,.gallery_{
+  		font-size: 2.3vw;
+  		text-align: center;
+  		color: rgba(0, 214, 170, .95);
+  		background-color: white;
 	}
-	#collapsable-nav{
-		font-size: 5vw;
+	#nav-list a:hover,.gallery_ ul a:hover,.about_ ul a:hover {
+	  color: #fff;
+	  background: transparent;
 	}
 	#nav-list li a{
 		margin-top: -8px;

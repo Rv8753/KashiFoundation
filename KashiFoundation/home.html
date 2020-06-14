@@ -1,107 +1,188 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Kashi Foundation</title>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE-edge">
-		<meta name="viewport" content="width=device-width ,initial-scale=1">		
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-
-
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-	  	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-	<header>
-		<nav id="header-nav" class="navbar navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a href="home.html" class="pull-left img-fluid">
-						<div id="logo-img"></div>
-					</a>
-					<div class="navbar-brand">
-					<a href="home.html" class="visible-xs visible-sm"><h1>Swagatam Kashi Foundation</h1></a>
-					</div>
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>	
-				</div>
-				<div id="collapsable-nav" class="collapse navbar-collapse">
-					<ul id="nav-list" class="nav navbar-nav navbar-right">
-						<li>
-							<a href="#">
-								<span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="glyphicon glyphicon-exclamation-sign"></span><br class="hidden-xs">About us</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="glyphicon glyphicon-phone"></span><br class="hidden-xs">Contact us</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="glyphicon glyphicon-registration-mark"></span><br class="hidden-xs">Sign In</a>
-						</li>
-					</ul>
-						
-				</div>
-			</div>
-		</nav>
-	</header>
-	<!-----Main Content------->
-	<div id="main-content" class="container">
-		<div class="jumbotron">
-			<img src="img/img_1.jpg" alt="Ganga Ghat Varansi" class="img-responsive">
-		</div>
-	</div>
-
-	<!----Footer------------>
-	<footer class="panel-footer">
-		<div class="container-fluid text-center text-md-left">
-			<div class="row">
-				<section id="address" class="col-md-4">
-					<strong>Address</strong><br>
-					Swagatam Kashi Foundation<br>
-					D-15/42, Manmandir,Dashashwamedh Ghat<br>
-					Varanasi, Uttar Pradesh 221001
-					<br>
-				</section>
-				<section id="contact" class="col-md-4">
-					<strong>Contact Us</strong><br>
-					<span>Phone:</span>
-					<a href="tel:8932027703" x-ms-format-detection="none">8932027703</a>
-					<br>
-					<span>Email:</span>
-					<a href="mailto:ravi.sahal9@gmail.com">ravi.sahal9@gmail.com</a>
-					<br>
-				</section>
-				<section id="connect" class="col-md-4">
-					<strong>Get Social With us!</strong><br>
-						<!--<div class="fb_logo">
-							<img src="img/fb_logo.png" alt="Ganga Ghat Varansi" class="img-responsive view overlay z-depth-1-half">
-						</div>
-						<div class="insta_logo">
-							<img src="img/insta_logo.png" alt="Ganga Ghat Varansi" class="img-responsive ">
-						</div>
-						<div class="tw_logo">
-							<img src="img/tw_logo.png" alt="Ganga Ghat Varansi" class="img-responsive ">
-						</div>-->
-				</section>
-				
-			</div>
-		</div>
-		 <div id="copyright"class="footer-copyright text-center py-3">© 2020 swagatamkashifoundation - All Rights Reserved.
-  		</div>
-	</footer>
-		<!-- jQuery library -->
-<script src="js/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-</body>
+   <head>
+      <title>Kashi Foundation</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE-edge">
+      <meta name="viewport" content="width=device-width ,initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <nav id="header-nav" class="navbar fixed-top navbar-default">
+            <div class="container-fluid">
+               <div class="navbar-header">
+                  <a href="home.html" class="pull-left img-fluid">
+                     <div id="logo-img"></div>
+                  </a>
+                  <div class="navbar-brand">
+                     <a href="home.html" class="visible-xs visible-sm">
+                        <h1>Swagatam Kashi Foundation</h1>
+                     </a>
+                  </div>
+                  <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>	
+               </div>
+               <div id="collapsable-nav" class="collapse navbar-collapse">
+                  <ul id="nav-list" class="nav navbar-nav navbar-right">
+                     <li>
+                        <a href="#">
+                        <br class="hidden-xs">Home</a>
+                     </li>
+                     <li class="dropdown about_">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        About <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                        	<li class="divider"></li>
+                           <li><a href="#">About Swagatam Kashi</a></li>
+                           <li><a href="#">About Kashi</a></li>
+                           <li class="divider"></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#">
+                        <br class="hidden-xs 
+                           ">Tourist Places</a>
+                     </li>
+                     <li>
+                        <a href="#">
+                        <br class="hidden-xs 
+                           ">Donate</a>
+                     </li>
+                     <li class="dropdown gallery_">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Our Gallery <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                        	<li class="divider"></li>
+                           <li><a href="#">Media Gallery</a></li>
+                           <li><a href="#">Photo Gallery</a></li>
+                           <li><a href="#">Video Gallery</a></li>
+                           <li class="divider"></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#">
+                        <br class="hidden-xs 
+                           ">Contact us</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-----Main Content------->
+      <div id="main-content" class="container">
+         <div class="jumbotron"></div>
+         <div id="founder-tiles" class="row">
+            <div class="col-md-6">
+               <a href="#" class="sec_founder">
+                  <div id="img_founder"></div>
+               </a>
+            </div>
+            <div class="col-md-3">
+               <h3><span>About Founder</span></h3>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </div>
+         </div>
+         <br>
+         <div id="home-tiles" class="row">
+            <div class="col-md-6">
+               <h3><span>About Founder</span></h3>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </div>
+            <div class="col-md-6">
+               <a href="#">
+                  <div id="founder"></div>
+               </a>
+            </div>
+         </div>
+         <br>
+         <div id="home-tiles" class="row">
+         	<div class="col-md-4">
+               <a href="#">
+                  <div id="founder"></div>
+               </a>
+            </div>
+            <div class="col-md-4">
+               <a href="#">
+                  <div id="founder"></div>
+               </a>
+            </div>
+            <div class="col-md-4">
+               <a href="#">
+                  <div id="founder"></div>
+               </a>
+            </div>
+         </div>
+         <br>
+         <div id="home-tiles" class="row">
+         	<div class="col-md-4 ">
+               <a href="#">
+                  <div id="founder"></div>
+               </a>
+            </div>
+            <div class="col-md-4">
+               <a href="#">
+                  <div id="founder"></div>
+               </a>
+            </div>
+            <div class="col-md-4">
+               <a href="#">
+                  <div id="founder"></div>
+               </a>
+            </div>
+         </div>
+         <br>
+      </div>
+      <!----Footer------------>
+      <footer id="footer" class="panel-footer">
+         <div class="container-fluid text-center text-md-left">
+            <div class="row">
+               <section id="address" class="col-md-4">
+                  <strong>Address</strong><br>
+                  Swagatam Kashi Foundation<br>
+                  D-15/42, Manmandir,Dashashwamedh Ghat<br>
+                  Varanasi, Uttar Pradesh 221001
+                  <br>
+               </section>
+               <section id="contact" class="col-md-4">
+                  <strong>Contact Us</strong><br>
+                  <span>Phone:</span>
+                  <a href="tel:8932027703" x-ms-format-detection="none">8932027703</a>
+                  <br>
+                  <span>Email:</span>
+                  <a href="mailto:ravi.sahal9@gmail.com">ravi.sahal9@gmail.com</a>
+                  <br>
+               </section>
+               <section id="connect" class="col-md-4">
+                  <strong>Get Social With us!</strong><br>
+                  <!--<div class="fb_logo">
+                     <img src="img/fb_logo.png" alt="Ganga Ghat Varansi" class="img-responsive view overlay z-depth-1-half">
+                     </div>
+                     <div class="insta_logo">
+                     <img src="img/insta_logo.png" alt="Ganga Ghat Varansi" class="img-responsive ">
+                     </div>
+                     <div class="tw_logo">
+                     <img src="img/tw_logo.png" alt="Ganga Ghat Varansi" class="img-responsive ">
+                     </div>-->
+               </section>
+            </div>
+         </div>
+         <div id="copyright"class="footer-copyright text-center py-3">© 2020 swagatamkashifoundation - All Rights Reserved.
+         	<br>Developed By :-Ravi Sahal
+         </div>
+      </footer>
+      <!-- jQuery library -->
+      <script src="js/jquery.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+   </body>
 </html>

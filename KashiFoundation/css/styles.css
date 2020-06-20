@@ -1,13 +1,23 @@
-html { overflow-y: scroll; }
+/******************Main Page Css*********************************/
+
 body{
 	font-size: 16px;
 	font-family: 'Oxygen',san-serif;
 	margin: 0;
 	padding: 0;
 	display: block;
+	
 }
 #header-nav{
-  background: rgba(0, 214, 170, .25);
+	margin-top: 0;
+	display: block;
+  	background: rgba(0, 214, 170, .25);
+}
+#divider_{
+	height: 5px;
+	overflow: hidden;
+	width: 1px;
+	display: block;
 }
 header {
   text-align: left;
@@ -26,58 +36,36 @@ header {
 	background-color:transparent;
 }
 .about_ ul,.gallery_ ul{
-	background: transparent;
+	background: white;
 	background: rgba(0, 214, 170, .25);
 	border-radius: 12px;
 }
 #collapsable-nav ul a,.about_,.gallery_{
-  color: #000;
+  color: black;
   text-decoration: none;
   font-size: 1.2vw;
   text-transform: uppercase;
   opacity: 1;
   transition: opacity 150ms ease-in-out;
 }
-#nav-list ul a:hover,.gallery_ ul a:hover,.about_ ul a:hover {
+#collapsable-nav ul a:hover,.gallery_ ul a:hover,.about_ ul a:hover {
   color: #fff;
-  background: transparent;
+  background-color: transparent;
 }
 .founder_:hover{
 	opacity: 0.9;
 }
-#img_founder{
-	
+#img_founder{	
 	height: 200px;
 	background: url('../img/img_founder.jpg') no-repeat;
-	background-size: contain;
+	background-size: cover;
+	object-fit: fill;
 	border-radius: 10px;
 }
 #founder{
 	background: url('../img/img_1.jpg') no-repeat;
 	height: 200px;
 }
-/*
-#nav-list a:hover{
-	background: #E7E7E7;
-	opacity: 1;
-}
-#nav-list a span{
-	font-size: 1.8em;
-	opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
-
-}
-.navbar-header button.navabar-toggle, .navbar-header .icon-bar{
-	border: 1px solid #fff;
-	color: #ff622f;
-}
-.navbar-header{
-	background-color: #929fba ;
-}
-.navbar-header button.navabar-toggle{
-	clear: both;
-}
-*/
 .fb_logo{
 	width: 50px;
 	height: 50px;		
@@ -103,6 +91,105 @@ header {
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
+/*********************Contact Us Page Css********************/
+
+#main-content_contact_page{
+	background: rgba(0, 214, 170, .25);
+}
+#map{
+	width: 40%;
+	float: left;
+	margin-left: 50px;
+	position: fixed;
+	height: 350px;
+	border-radius:10px;
+	margin-top: 70px;
+}
+.social_navbar{
+	position: fixed;
+	top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: green;
+    margin-right: 0;
+}
+.social_navbar a{
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+	transition: all 0.3s ease;
+}
+.contact_navbar{
+	margin-top: 160px;
+	position: inherit;
+	float: right;   
+}
+#contact_data{
+	margin-top: 70px;
+	float:right; 
+    background: url('../img/contact_bg.png') no-repeat;
+    background-size: cover;
+    background-color:orange;
+    opacity: 0.5;
+    width:25%; 
+    height: 350px;
+}
+.contact_navbar a{
+	display: block;
+	font-size: 20px;
+	padding: 15px;
+}
+.phone{
+	color: black;
+	background-color: orange;
+	opacity: 0.5;
+	border-top-left-radius: 10px;
+}
+.mail{
+	background-color: orange;
+	opacity: 0.5;
+}
+.address{
+	background-color: orange;
+	opacity: 0.5;
+	border-bottom-left-radius: 10px;
+}
+.facebook{
+	color: white;
+	border-top-right-radius: 10px;
+	background-color: #4e7ac2;
+}
+.twitter{
+	color: white;
+	background-color:#5391f5; 
+}
+.twitter :hover{
+	color: #97befc;
+}
+.youtube{
+	color: white;
+	background-color: #f21d1d;
+}
+.youtube:hover{
+	background-color:white;
+	color: red;
+}
+.gmail{
+	background-color:  #e6e6f0;
+	border-bottom-right-radius: 10px;
+}
+.gmail:hover{
+	background-color: white;
+}
+#contact_footer{
+	display: block;
+	position: sticky;
+	background: url('../img/contact_footer.png') no-repeat;
+    background-size: cover;
+}
+
 /*******Large devices only******/
 @media(min-width: 1200px){
 	
@@ -163,25 +250,25 @@ header {
 		color: #000;
 		text-transform: uppercase;
 		font-weight: bold;
-	}.about_,.gallery_{
-	margin-top: 0;
-}
+	}
+	.about_,.gallery_{
+		margin-top: 0;
+	}
 	
 	.navbar-brand a:hover,.navbar-brand a:focus{
 		text-decoration: none;
 	}
-	
 	#collapsable-nav ul a,.about_,.gallery_{
   		font-size: 2.3vw;
   		text-align: center;
+  		background:white;
   		color: rgba(0, 214, 170, .95);
+	}
+	#collapsable-nav ul a:hover,.about_,.gallery_{
+  		color: black;
   		background-color: white;
 	}
-	#nav-list a:hover,.gallery_ ul a:hover,.about_ ul a:hover {
-	  color: #fff;
-	  background: transparent;
-	}
-	#nav-list li a{
+		#nav-list li a{
 		margin-top: -8px;
 	}
 

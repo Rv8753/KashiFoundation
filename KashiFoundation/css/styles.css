@@ -6,9 +6,123 @@ body{
 	display: block;
 	
 }
+html{
+	margin: 0;
+	padding: 0;
+}
+.varansi{
+	font-family: "Ostrich Sans Rounded";
+		font-size: 11vw;
+		line-height: 40px;
+		color: #fb7c1b;
+		display: block;
+		position: absolute;
+		top :350px;
+		margin-left: 32vw;
+		text-align: center;
+		filter: drop-shadow(9px 3px 6px rgba(0, 0, 0, 1)) blur(0px);
+		overflow: visible;
+		transition: width .35s ease-in-out;
+		color: rgba(255, 255, 255, 0.6);
+		z-index: 2;
+		mix-blend-mode: overlay;
+		z-index: 1;
+}
+.rectangle {
+	    display: block;
+	    position: relative;
+	    margin-left:auto;
+	    margin-right: auto;
+	    margin-top: 44px; 
+	    height: 140px;
+	    width: 29vw;
+  		background-color: #F9F8DA;
+  		z-index: 0;
+  		mix-blend-mode: multiply;
+}
+.tagline{
+		font-family: "Ostrich Sans Rounded";
+		font-size: 3vw;
+		letter-spacing: 0.11em;
+		line-height: 40px;
+		color: #fb7c1b;
+		display: block;
+		position: absolute;
+		top :117px;
+		left: 38.5%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		z-index: 11;
+		/*margin-top: -9%;*/
+}
+.tagline1{
+		font-family: "Ostrich Sans Inline";
+		font-size: 3vw;
+		letter-spacing: 0.11em;
+		line-height: 40px;
+		color: #fb7c1b;
+		display: block;
+		position: absolute;
+		top :187px;
+		left: 44.5%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		z-index: 11;
+		/*margin-top: -9%;*/
+}
+.logo{
+	display: block;
+	position: absolute;
+	left: 20px;
+	margin-top: -30px;
+	
+	padding-bottom: 5px;
+	top:5px;
+	z-index: 11;
+	width: 60px;
+	height: 60px;
+}
+.backgroundimage{
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	position: absolute;
+	}
+
+#donate{
+	/*margin-top:25px;*/
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.2vw;
+	font-weight: normal;
+	width: 11vw;
+	height: 46px;
+	border-radius: 8px 0px 0px 8px;
+	border-style: none;
+	background: linear-gradient(#f96049 0%, #f84941 43.45%, #f72d38 100%);
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.89);
+	float: right;
+	display: inline-block;
+	margin-top:0;
+	margin-bottom: 10px;
+	padding-top: 0;
+}
 #header-nav{
 	position: relative;
-  	background: rgba(0, 214, 170, .25);
+  	width: 100%;
+	display: inline-block;
+	z-index: 1;
+	margin-top: -45px;
+	padding-top: 0;
+	position: absolute;
+	border-radius: 0;
+	border:none;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	background: #f07e71;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 #divider_{
 	height: 5px;
@@ -21,13 +135,16 @@ header {
   position: fixed;
   z-index: 999;
   width: 100%;
+
 }
-#footer{
-	background: rgba(0, 214, 170, .25);
+#footer{	
+	background: #f07e71;   
 }
+
 #copyright{
-	background: rgba(0, 214, 170, .25);
-} 
+	background: #f08f74;
+}
+
 .about_,.gallery_{
 	margin-top: 20px;
 	background-color:transparent;
@@ -63,21 +180,7 @@ header {
 	background: url('../img/img_1.jpg') no-repeat;
 	height: 200px;
 }
-.fb_logo{
-	width: 50px;
-	height: 50px;		
-	float: left;
-}
-.insta_logo{
-	width: 50px;
-	height: 50px;		
-	float: left;
-}	
-.tw_logo{
-	width: 50px;
-	height: 50px;		
-	float: left;
-}
+
 
 .jumbotron{
 	margin-top: 100px;
@@ -117,6 +220,7 @@ header {
 	display: block;
 	text-decoration: none;
 }
+
 .popup_submit:hover{
 	color: black;
 }
@@ -261,53 +365,69 @@ header {
 	background: url('../img/logo.png') no-repeat;
 	margin: 10px 0 0 0;
 	}
-	#collapsable-nav a{
-		font-size: 2vw;
+	#collapsable-nav ul a{
+		font-size: 2.3vw;
 	}
 }
 /*******medium devices only******/
 @media(min-width: 992px) and (max-width: 1199px){
 	#logo-img{
 	background: url('../img/logo.png') no-repeat;
-	width: 100px;
-	height: 100px;
-	
-	}	
+	display: block;
+	position: absolute;
+	left: 20px;
+	top:20px;
+	z-index: 10;
+	width: 60px;
+	height: 60px;
+	}
 	.navbar-brand a:hover,.navbar-brand a:focus{
 		text-decoration: none;
 
 	}
-	#collapsable-nav a{
+	#collapsable-nav ul a{
 		font-size: 2vw;
 	}
 }
 /*******small devices only******/
 @media(min-width: 768px) and (max-width: 991px){
-	
+	.donate_mob{
+	display: none;
+}
 	.navbar-brand a:hover,.navbar-brand a:focus{
 		text-decoration: none;
 	}
 	.navbar-brand h1{
 		padding: 0;
-		font-size: 1.5vw;
+		font-size: 2vw;
 		color: #000;
 		text-transform: uppercase;
 		font-weight: bold;
 	}
 	
-	#collapsable-nav a{
-		font-size: 1.6vw;
-	}
+	#collapsable-nav ul a,.about_,.gallery_{
+  		font-size: 1.8vw;
 
+	}
 }
 /*******extra small devices only******/
 @media(max-width: 767px){
+	.logo{
+		display: block;
+		position: absolute;
+		left: 15px;
+		top:-5px;
+		z-index: 11;
+		width: 50px;
+		height: 50px;
+	}
 	.navbar-brand{
 		height: 60px;
 	}
 	.navbar-brand h1{
 		margin-top:0;
-		font-size: 4vw;
+		margin-left: 70px;
+		font-size: 3.5vw;
 		color: #000;
 		text-transform: uppercase;
 		font-weight: bold;
@@ -323,19 +443,21 @@ header {
   		font-size: 2.3vw;
   		text-align: center;
   		background:white;
-  		color: rgba(0, 214, 170, .95);
 	}
 	#collapsable-nav ul a:hover,.about_,.gallery_{
   		color: black;
   		background-color: white;
 	}
-		#nav-list li a{
-		margin-top: -8px;
+	#nav-list li a{
+		margin-top:-10px;
+		padding-top: 15px;
 	}
 
 	.navbar-header{
 		margin-bottom: 0;
 		margin-top: 0;
 	}	
-	
+	#donate{
+	display: none;
+	}
 }

@@ -7,17 +7,16 @@
       <meta name="viewport" content="width=device-width ,initial-scale=1">
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="css/styles.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-	<header>
-         <nav id="header-nav" class="navbar fixed-top navbar-default">
+	<header>         
+         <nav id="header-nav" class="navbar smart-scroll navbar-default">
+            <img src="img/logo.png" alt="logo" class="logo">
             <div class="container-fluid">
                <div class="navbar-header">
-                  <a href="home.html" class="pull-left img-fluid">
-                     <div id="logo-img"></div>
-                  </a>
                   <div class="navbar-brand">
-                     <a href="home.html" class="visible-xs visible-sm">
+                     <a href="home.html" class="visible-xs ">
                         <h1>Swagatam Kashi Foundation</h1>
                      </a>
                   </div>
@@ -26,51 +25,47 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
-                  </button>	
+                  </button>   
                </div>
                <div id="collapsable-nav" class="collapse navbar-collapse">
                   <ul id="nav-list" class="nav navbar-nav navbar-right">
                      <li>
-                        <a href="home.html">
+                        <a href="home.html" style="color: white;">
                         <br class="hidden-xs">Home</a>
                      </li>
                      <li class="dropdown about_">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                        	<li class="divider"></li>
-                           <li><a href="#">About Swagatam Kashi</a></li>
-                           <li><a href="#">About Kashi</a></li>
-                           <li class="divider"></li>
+                           <li><a href="aboutksf.html">About Swagatam Kashi</a></li>
+                           <li><a href="aboutksf.html">About Kashi</a></li>
                         </ul>
                      </li>
                      <li>
-                        <a href="#">
+                        <a href="tourism.html">
                         <br class="hidden-xs 
                            ">Tourist Places</a>
                      </li>
-                     <li>
-                        <a href="#"  id="donate" class="donate">
-                        <br class="hidden-xs
-                           ">Donate</a>
-                     </li>
-
                      <li class="dropdown gallery_">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         Our Gallery <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                        	<li class="divider"></li>
-                           <li><a href="#">Media Gallery</a></li>
-                           <li><a href="#">Photo Gallery</a></li>
-                           <li><a href="#">Video Gallery</a></li>
-                           <li class="divider"></li>
+                           <li><a href="gallery.html">Media Gallery</a></li>
+                           <li><a href="gallery.html">Photo Gallery</a></li>
+                           <li><a href="gallery.html">Video Gallery</a></li>
                         </ul>
                      </li>
                      <li>
-                        <a href="#">
+                        <a href="contact.html">
                         <br class="hidden-xs 
                            ">Contact us</a>
+                     </li>
+                     <li>
+                        <a href="#" class="donate">
+                        <br class="visible-xs">
+                        <button id="donate">DONATE NOW</button>
+                        </a>
                      </li>
                   </ul>
                </div>
@@ -214,13 +209,12 @@
          </div>
       </footer>
       <script type="text/javascript">
-
          var modal = document.getElementById("bg-modal");
-
+         
          document.getElementById('donate').addEventListener("click", function() {
            document.querySelector('.bg-modal').style.display = "flex";
          });
-
+         
          document.querySelector('.close').addEventListener("click", function() {
            document.querySelector('.bg-modal').style.display = "none";
          });
@@ -229,11 +223,26 @@
              modal.style.display = "none";
            }
          }
+         $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
+         
+         // detect scroll top or down
+         if ($('.smart-scroll').length > 0) { // check if element exists
+          var last_scroll_top = 0;
+          $(window).on('scroll', function() {
+              scroll_top = $(this).scrollTop();
+              if(scroll_top < last_scroll_top) {
+                  $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+              }
+              else {
+                  $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+              }
+              last_scroll_top = scroll_top;
+          });
+         }
       </script>
       <!-- jQuery library -->
       <script src="js/jquery.min.js"></script>
       <!-- Latest compiled JavaScript -->
       <script src="js/bootstrap.min.js"></script>
    </body>
-</html>
 </html>

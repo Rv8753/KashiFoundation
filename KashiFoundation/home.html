@@ -8,14 +8,13 @@
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="css/styles.css">
       <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    </head>
    <body>
-      
       <img src="img/bckimg1.png" alt="varanasibanner" class="backgroundimage"> 
-
-      <header>
-         <img src="img/logo.png" alt="logo" class="logo">
-         <nav id="header-nav" class="navbar fixed-top navbar-default">
+      <header>         
+         <nav id="header-nav" class="navbar smart-scroll navbar-default">
+            <img src="img/logo.png" alt="logo" class="logo">
             <div class="container-fluid">
                <div class="navbar-header">
                   <div class="navbar-brand">
@@ -28,22 +27,20 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
-                  </button>	
+                  </button>   
                </div>
                <div id="collapsable-nav" class="collapse navbar-collapse">
                   <ul id="nav-list" class="nav navbar-nav navbar-right">
                      <li>
-                        <a href="home.html">
+                        <a href="home.html" style="color: white;">
                         <br class="hidden-xs">Home</a>
                      </li>
                      <li class="dropdown about_">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                        	<li class="divider"></li>
-                           <li><a href="#">About Swagatam Kashi</a></li>
-                           <li><a href="#">About Kashi</a></li>
-                           <li class="divider"></li>
+                           <li><a href="aboutksf.html">About Swagatam Kashi</a></li>
+                           <li><a href="aboutksf.html">About Kashi</a></li>
                         </ul>
                      </li>
                      <li>
@@ -51,29 +48,25 @@
                         <br class="hidden-xs 
                            ">Tourist Places</a>
                      </li>
-                     
-
                      <li class="dropdown gallery_">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         Our Gallery <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                        	<li class="divider"></li>
-                           <li><a href="#">Media Gallery</a></li>
-                           <li><a href="#">Photo Gallery</a></li>
-                           <li><a href="#">Video Gallery</a></li>
-                           <li class="divider"></li>
+                           <li><a href="gallery.html">Media Gallery</a></li>
+                           <li><a href="gallery.html">Photo Gallery</a></li>
+                           <li><a href="gallery.html">Video Gallery</a></li>
                         </ul>
                      </li>
                      <li>
-                        <a href="#">
+                        <a href="contact.html">
                         <br class="hidden-xs 
                            ">Contact us</a>
                      </li>
                      <li>
                         <a href="#" class="donate">
                         <br class="visible-xs">
-                           <button id="donate">DONATE NOW</button>
+                        <button id="donate">DONATE NOW</button>
                         </a>
                      </li>
                   </ul>
@@ -83,72 +76,40 @@
       </header>
       <div class="rectangle"></div>
       <label class="tagline">Cleanliness is next<br> to </label><label class="tagline1"> Godliness</label> 
-      
       <h2 class="varansi">वाराणसी</h2>
       <!-----Main Content------->
-      <div id="main-content" class="container" >
+      <div id="main-content" class="container-fluid" >
          <div class="jumbotron" class="container-fluid"></div>
-         <div id="founder-tiles" class="row">
-            <div class="col-md-4">
-               <a href="#" class="sec_founder">
-                  <div id="img_founder"></div>
-               </a>
-
+         <br>
+         <div id="_2nd" class="container-fluid">
+            <div id="founder-tiles" class="row">
+               <div class="hexagon hex-01">
+                  <div class="hexagon-inside">
+                     <div class="hexagon-img"></div>
+                  </div>
+               </div>
+               <div class="hexagon hex-02">
+                  <div class="hexagon-inside">
+                     <div class="hexagon-img"></div>
+                  </div>
+               </div>
             </div>
-            <div class="col-md-8">
-               <h3><span>About Founder</span></h3>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            <br>
+         </div>
+         <div id="_3rd" class="row container-fluid">
+            <img class="home_bck" src="036.jpg">
+            <div class="">
+               <img class="img2" src="g29.png">
+               <img src="circle.png" class="circle">
+               <label id="kashilabel">Kashi Swagatam Foundation</label>
+               <img src="rectangle2.png" class="rectangle2">
+               <div class="rect_3rd">
+                  <label id="loren"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus ultrices in. Egestas diam in arcu cursus euismod. Dictum fusce ut placerat orci nulla. Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu nisl nunc mi ipsum faucibus. Fusce id velit ut tortor pretium. Massa ultricies mi quis hendrerit dolor magna eget. Nullam eget felis eget nunc lobortis. Faucibus ornare suspendisse sed</label>
+               </div>
             </div>
          </div>
          <br>
-         <div id="home-tiles" class="row">
-            <div class="col-md-6">
-               <h3><span>About Founder</span></h3>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            </div>
-            <div class="col-md-6">
-               <a href="#">
-                  <div id="founder"></div>
-               </a>
-            </div>
-         </div>
-         <br>
-         <div id="home-tiles" class="row">
-         	<div class="col-md-4">
-               <a href="#">
-                  <div id="founder"></div>
-               </a>
-            </div>
-            <div class="col-md-4">
-               <a href="#">
-                  <div id="founder"></div>
-               </a>
-            </div>
-            <div class="col-md-4">
-               <a href="#">
-                  <div id="founder"></div>
-               </a>
-            </div>
-         </div>
-         <br>
-         <div id="home-tiles" class="row">
-         	<div class="col-md-4 ">
-               <a href="#">
-                  <div id="founder"></div>
-               </a>
-            </div>
-            <div class="col-md-4">
-               <a href="#">
-                  <div id="founder"></div>
-               </a>
-            </div>
-            <div class="col-md-4">
-               <a href="#">
-                  <div id="founder"></div>
-               </a>
-            </div>
-         </div>
-          <div id="bg-modal" class="bg-modal modal">
+         <div id="bg-modal" class="bg-modal modal">
             <div class="modal-contents">
                <div class="close">+</div>
                <form action="alert('We Will inform you as your received')">
@@ -160,8 +121,9 @@
                </form>
             </div>
          </div>
-         <br>
       </div>
+      <!----Hirshi's content-------->
+      <!-- INFORMATIONPAGE -->
       <!----Footer------------>
       <footer id="footer" class="panel-footer">
          <div class="container-fluid text-center text-md-left">
@@ -197,17 +159,16 @@
             </div>
          </div>
          <div id="copyright"class="footer-copyright text-center py-3">© 2020 swagatamkashifoundation - All Rights Reserved.
-         	<br>Developed By :-Ravi Sahal
+            <br>Developed By :-Ravi Sahal
          </div>
       </footer>
       <script type="text/javascript">
-
          var modal = document.getElementById("bg-modal");
-
+         
          document.getElementById('donate').addEventListener("click", function() {
            document.querySelector('.bg-modal').style.display = "flex";
          });
-
+         
          document.querySelector('.close').addEventListener("click", function() {
            document.querySelector('.bg-modal').style.display = "none";
          });
@@ -216,6 +177,22 @@
              modal.style.display = "none";
            }
          }
+         $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
+
+// detect scroll top or down
+      if ($('.smart-scroll').length > 0) { // check if element exists
+          var last_scroll_top = 0;
+          $(window).on('scroll', function() {
+              scroll_top = $(this).scrollTop();
+              if(scroll_top < last_scroll_top) {
+                  $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+              }
+              else {
+                  $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+              }
+              last_scroll_top = scroll_top;
+          });
+      }
       </script>
       <!-- jQuery library -->
       <script src="js/jquery.min.js"></script>

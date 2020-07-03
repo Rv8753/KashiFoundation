@@ -38,7 +38,7 @@ html {
     border: 0;
 }
 .navbar-toggle:hover{
-	background-color:  white !important;
+	background-color:  #ff5500 !important;
 }
 .navbar-brand {
 		height: 60px;
@@ -183,7 +183,7 @@ header {
 .about_ ul,
 .gallery_ ul {
 	background: black;
-	background: #ff5500;
+	background-color:white;
 	border-radius: 5px;
 }
 #collapsable-nav ul a{
@@ -205,7 +205,7 @@ header {
 #collapsable-nav ul a:hover,
 .gallery_ ul a:hover,
 .about_ ul a:hover {
-	color:white;
+	color:#ff5500;
 	
 }
 #donate {

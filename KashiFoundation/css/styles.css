@@ -183,7 +183,7 @@ header {
 .about_ ul,
 .gallery_ ul {
 	background: black;
-	background: white;
+	background: #ff5500;
 	border-radius: 5px;
 }
 #collapsable-nav ul a{
@@ -205,7 +205,7 @@ header {
 #collapsable-nav ul a:hover,
 .gallery_ ul a:hover,
 .about_ ul a:hover {
-	color: #ff5500;
+	color:white;
 	
 }
 #donate {

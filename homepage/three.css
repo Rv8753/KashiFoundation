@@ -1,0 +1,95 @@
+html, body {
+    /*height: 100%;*/
+    margin: 0;
+    padding: 0;
+}
+
+.bckimg{
+	position: absolute;
+      height: 100vh;
+  width: 100%;
+background-size: 100% 100%;
+opacity: 0.2; 
+z-index: 0;}
+.img2{
+	position: absolute;
+z-index: 1;
+    top: 19vw;
+    left: 8vw;
+    height: 45%;
+
+}
+	#kashilabel {
+		position: absolute;
+		left: 392px;
+		top: 101px;
+		overflow: visible;
+		width: 583px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Code Bold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		color: rgba(0,0,0,1);
+		letter-spacing: 1.11px;
+	}
+	.rectangle {
+		display: block;
+	    position: relative;
+	    margin-left: auto;
+	    margin-right: auto;
+	    height: 345px;
+	    width: 43vw;
+	    background-color: white;
+	    z-index: 0;
+	    mix-blend-mode: normal;
+	    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, .1));
+	    top: 19vw;
+	    left: 19vw;
+
+}
+
+	#loren {
+		position: relative;
+    left: 0.5vw;
+    top: 4.5vw;
+    overflow: hidden;
+    /* width: 504px; */
+    /* height: 282px; */
+    line-height: 1.5em;
+    /*margin-top: 2px;*/
+    text-align: left;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    color: rgba(0,0,0,1);
+    letter-spacing: 0.61px;
+    text-align: justify;
+    /* margin-left: 0vw; */
+    padding-left: 5vw;
+      text-justify: inter-word;
+
+	}
+	
+	.circle {
+		position: absolute;
+		overflow: visible;
+		width: 536px;
+		height: 536px;
+		left: 415px;
+		top: -300px;
+		opacity: 1.166;
+	}
+
+	 
+	.rectangle2 {
+		position: absolute;
+		overflow: visible;
+		width: 346px;
+		height: 100vh;
+		left: 0px;
+		top: 0px;
+
+	}

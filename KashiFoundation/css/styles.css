@@ -114,7 +114,7 @@ html {
 #service_sec{
 	width: 80%;
 	left: 10%;
-	height: 50vh;
+	height: 100vh;
 	position: relative;
 	overflow: hidden;
 }
@@ -126,7 +126,7 @@ html {
 }
 #service_sec_item{
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background: white;	
 	overflow: hidden;
 }
@@ -143,26 +143,46 @@ html {
   position: relative;
   border-radius: 30px;
   max-width:100%;
-  height: 100%;
+  height: 100vh;
+}
+.feed_sec_items{
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width:100%;
+  position: relative;
+  
+  max-width:100%;
+  height: 100vh;
+}
+.feed_sec_items >img{
+	background-position: center;
+ position: absolute;
+ background-size: 100% 100%;
+ width:90%;
+ max-width:100%;
+ left: 5%;
+ top: 45px;
+ height: 50vh;
 }
 .service_sec_items img{
  background-position: center;
  position: absolute;
  background-size: 100% 100%;
- border-radius: 30px;
+ border-top-right-radius:  30px;
+ border-top-left-radius: 30px;
  width:100%;
  max-width:100%;
  left: 0;
- height: 50vh;
+ height: 61vh;
 }
-.service_sec_items img:hover{
+.service_sec_items img:hover,.feed_sec_items >img:hover{
 	transform: scale(1.05);
 }
 .service_sec_items_text {
 position: absolute;    
 background:rgba(0,0,0, 0.5);
 width: 100%;
-height: 20%;
+height: 40vh;
 top: 61%;
 color: #fff;
 text-align: center;
@@ -265,7 +285,8 @@ header {
 #collapsable-nav ul a{
 	top: 0;
 	padding-top: 0;
-	padding-bottom: 8px;
+	padding-bottom: 12px;
+	margin-right: -10px;
 }
 #collapsable-nav ul a,
 .about_,
@@ -286,19 +307,19 @@ header {
 }
 #donate {
 	/*margin-top:25px;*/
-	font-family: 'Poiret One', cursive;
+	font-family: "Ostrich Sans Rounded";
 	font-size: 1.1vw;
-	font-weight:800;
-	
-	width: 180px;
+	padding-right: 0;
+	font-weight:100;
+	width: 140px;
 	height: 46px;
 	border-radius: 8px 8px 8px 8px;
 	border-style: none;
-	background-color: white;/*#F72D38;*/
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+	background-color: #F49A0D;/*#F72D38;*/
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.5);
 	float: right;
 	display: inline-block;
-	margin-top: 0;
+	margin-top: 2px;
 	margin-bottom: 10px;
 	padding-top: 0;
 }
@@ -319,10 +340,10 @@ header {
 	display: inline-block;
 	
 }
-#book:hover{
-	background: white;
+#donate:hover{
+	background: #F49A0D;
 }
-#book:active {
+#donate:active {
   box-shadow: none;
   transform: translateY(2px);
 }
@@ -413,10 +434,10 @@ strong{
 	display: block;
 	position: absolute;
 	left: 15px;
-	top: -3px ;
+	top: -1.5px ;
 	z-index: 11;
-	width: 140px;
-	height: 85px;
+	width: 130px;
+	height: 82px;
 }/*
 .home_tag_rectangle {
 	display: block;
@@ -510,7 +531,7 @@ strong{
 #kashilabel1 {
 	margin-right: 0;
 	position: absolute;
-	left:25vw;
+	left:28vw;
 	top: 1.5vw;
 	overflow: visible;
 	white-space: nowrap;
@@ -526,7 +547,7 @@ strong{
 }
 #kashilabel2 {
 	position: absolute;
-	left: 25vw;
+	left: 27.8vw;
 	top: 5.5vw;
 	overflow: visible;
 	white-space: nowrap;
@@ -599,7 +620,7 @@ strong{
 }
 #kashilabel {
 	position: absolute;
-	left: 28.2vw;
+	left: 27.2vw;
 	top: 101px;
 	overflow: visible;
 	white-space: nowrap;

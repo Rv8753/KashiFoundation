@@ -82,8 +82,9 @@ html {
 	top: 0;
 }
 #_1st{
-	width: 80%;
-	left: 10%;
+
+	margin-top: 3%;
+	width: 100%;
 	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1), 10px 0 10px 10px rgba(0, 0, 0, 0.1);
 	height: 100vh;
 	position: relative;
@@ -126,7 +127,8 @@ html {
 }
 #service_sec_item{
 	width: 100%;
-	height: 100vh;
+	height: 70vh;
+	padding-top: 8%;
 	background: white;	
 	overflow: hidden;
 }
@@ -143,28 +145,27 @@ html {
   position: relative;
   border-radius: 30px;
   max-width:100%;
-  height: 100vh;
+  height: 60vh;
 }
 .feed_sec_items{
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 25px 5px 0 rgba(221, 35, 32, 0.2), 0 1px 0px 0 rgba(205, 34, 33, 0.1);
   text-align: center;
   width:100%;
-  position: relative;
-  
+  position: relative;  
   max-width:100%;
-  height: 100vh;
+  height:60vh;
 }
 .feed_sec_items >img{
-	background-position: center;
+ background-position: center;
  position: absolute;
  background-size: 100% 100%;
- width:90%;
+ width:50%;
  max-width:100%;
- left: 5%;
- top: 45px;
- height: 50vh;
+ left: 25%;
+ top: 60px;
+ height: 20vh;
 }
-.service_sec_items img{
+.service_sec_items >img{
  background-position: center;
  position: absolute;
  background-size: 100% 100%;
@@ -173,27 +174,78 @@ html {
  width:100%;
  max-width:100%;
  left: 0;
- height: 61vh;
+ height: 38.3vh;
 }
 .service_sec_items img:hover,.feed_sec_items >img:hover{
 	transform: scale(1.05);
 }
 .service_sec_items_text {
 position: absolute;    
-background:rgba(0,0,0, 0.5);
+background:rgba(205, 34, 33, 0.5);
 width: 100%;
 height: 40vh;
-top: 61%;
+top:85%;
 color: #fff;
 text-align: center;
 text-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
+/****************************************/
+.parent-box{
+			background-color: #ddd;
+			display: flex;
+		}
+		.box{
+			height: 300px;
+			background-color: orange;
+			margin: 10px;
+		}
+		.owl-carousel .owl-nav button.owl-prev{
+    	background: none;
+    	color: inherit;
+    	border: none;
+    	padding: 0 !important;
+    	font: inherit;
+    	position: absolute;
+    	top: 50%;
+    	transform: translateY(-50%);
+    	width: 50px;
+    	height: 50px;
+    	border-radius: 50%;
+    	background-color: green;
+}
 
+		 .owl-carousel .owl-nav button.owl-next{
+		background: none;
+    	color: inherit;
+    	border: none;
+    	padding: 0 !important;
+    	font: inherit;	
+    	position: absolute;
+    	top: 50%;
+    	transform: translateY(-50%);
+    	right: 0;
+    	width: 50px;
+    	height: 50px;
+    	border-radius: 50%;
+    	background-color: green;
+		 }
+/********************************************/
+.feed_sec_items_text{
+position: absolute;    
+background:rgba(192, 33, 43, .65);
+width: 100%;
+height: 40vh;
+top: 60%;
+color: #fff;
+text-align: center;
+text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
 .service_sec_items_text {
-	color: white;
-   font-size: 3vw;
-   padding-left: 15px;
-   text-transform: uppercase;
+ 	color: white;
+   	font-size: 2vw;
+   	top: 63.8%;
+   	padding-left: 15px;
+   	text-transform: uppercase;
 }
 .carousel {
     overflow: hidden;
@@ -315,7 +367,7 @@ header {
 	height: 46px;
 	border-radius: 8px 8px 8px 8px;
 	border-style: none;
-	background-color: #F49A0D;/*#F72D38;*/
+	background-color: #c82319;/*#F72D38;*/
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.5);
 	float: right;
 	display: inline-block;
@@ -341,12 +393,16 @@ header {
 	
 }
 #donate:hover{
-	background: #F49A0D;
+	background: #c82319;
+	color: white;
 }
 #donate:active {
   box-shadow: none;
+
   transform: translateY(2px);
 }
+
+
 /************Footer page css***************/
 #footer {
 	background: white;
@@ -637,12 +693,59 @@ strong{
 	position: absolute;
 	overflow: visible;
 	width: 28.15vw;
-	height: 100vh;	
-	left: 0px;
-	top: 0px;
+	height: 90vh;	
+	left: 10%;
+	top: 5vh;
 }
+.whiterect{
+	position: absolute;
+	overflow: visible;	
+	width:60% ;
+	height: 48.5vh;	
+	left: 35%;
+	top: 5%;
+}
+.advwhiterect{
+	position: absolute;
+	overflow: visible;	
+	width:60% ;
+	height: 48.5vh;	
+	left: 35%;
+	top: 47.8%;
+}
+.scwrect{
+	position: absolute;
+	overflow: visible;	
+	width:35.5% ;
+	height: 41vh;	
+	left: 13%;
+	top: 8.3%;
 
+}
+.advrect{
+	position: absolute;
+	overflow: visible;	
+	width:35.5% ;
+	height: 41vh;	
+	left: 13%;
+	top: 51%;
 
+}
+.scwcontent{
+	left: 43%;
+	position: absolute;
+	padding-right: 0;
+	width:50% ;
+	height: 42.5vh;	
+}
+.advcontent{
+	left: 48%;
+	position: absolute;
+	padding-right: 0;
+	width:44% ;
+	height: 42.5vh;	
+	top: 51%;
+}
 /**********************about Page css*************************/
 a{
 	color: black;
@@ -1421,15 +1524,84 @@ a:hover{
 }
 
 .hex-02 {
-	
-	margin-left: -60px;
+	margin-left: -45px;
 }
 
 .img2 {
 	position: absolute;
 	z-index: 1;
 	top: 20%;
-	left:0;
-	
+	left:0;	
 	height: 28vw;
+}
+
+/*********************************/
+/**********************************/
+/**********************************/
+.owl-item{
+	width: 350px; !important;
+	margin-right: -85px !important; 
+	padding-bottom: -10px !important;
+}
+.owl-theme .owl-dots{
+	display: none;
+}
+.img_box{
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2), 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width:50%;
+  position: relative;  
+  max-width:100%;
+  height:50vh;
+}
+.img_box > img{
+ background-position: center;
+ position: absolute;
+ background-size: 100% 100%;
+ width:30% !important;
+ max-width: 100%;
+ left: 30%;
+ top: 60px;
+ height: 20vh;
+}
+.owl-nav button.owl-next{
+	right: 0;
+	background-color: rgba(192, 33, 43, .65) !important;
+}
+.owl-nav button.owl-prev{
+	left: 0;
+	background-color: rgba(192, 33, 43, .65) !important;
+}
+.feed_text{
+position: absolute;    
+background:rgba(192, 33, 43, .65);
+width: 20%;
+height: 10%;
+top: 60%;
+color: #fff;
+text-align: center;
+text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.owl-carousel{
+	width: 100%;
+	height: 70vh;
+	padding-top: 5%;
+	background: white;	
+}
+.owl-carousel .owl-item{
+	
+	padding:10px 0px;
+	z-index: 999;
+	
+}
+.owl-carousel .owl-item.active.center{	
+	padding: 10px 0;
+	transform: all 0.5s;
+}
+.owl-carousel .owl-item.active.center .img_box{
+	background-color: rgba(192, 33, 43, .65);
+	height: 60vh;
+	width: 80%;
+	margin-top: -30px !important;
+	margin-left: -60px;
 }

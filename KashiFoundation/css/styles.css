@@ -1,6 +1,9 @@
  @font-face { font-family: ostrich; src: url('../fonts/ostrich-sans.sans-black.ttf'); } 
  @font-face { font-family: ostrich; font-weight: bold; src: url('../fonts/ostrich-sans.sans-black.ttf');}
 
+ @font-face { font-family: jelytta; src: url('../fonts/jelytta.ttf'); } 
+ 
+
 /********common***********/
 body {
 	font-size: 16px;
@@ -15,7 +18,7 @@ body {
 	margin: 0;
 }
 .row{
-
+	overflow: hidden;
 	margin: 0!important;
 }
 html {
@@ -113,8 +116,8 @@ html {
 	overflow: hidden;
 }
 #service_sec{
-	width: 80%;
-	left: 10%;
+	width: 90%;
+	left: 5%;
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
@@ -135,7 +138,7 @@ html {
 #service_sec_item{
 	width: 100%;
 	height: 70vh;
-	padding-top: 8%;
+	padding-top: 6%;
 	background: white;	
 	overflow: hidden;
 }
@@ -152,7 +155,7 @@ html {
   position: relative;
   border-radius: 30px;
   max-width:100%;
-  height: 60vh;
+  
 }
 .feed_sec_items{
   box-shadow: 0 25px 5px 0 rgba(221, 35, 32, 0.2), 0 1px 0px 0 rgba(205, 34, 33, 0.1);
@@ -170,9 +173,10 @@ html {
  max-width:100%;
  left: 25%;
  top: 60px;
- height: 20vh;
+ 
 }
 .service_sec_items >img{
+ box-shadow:inset 20px 20px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);	
  background-position: center;
  position: absolute;
  background-size: 100% 100%;
@@ -180,18 +184,22 @@ html {
  border-top-left-radius: 30px;
  width:100%;
  max-width:100%;
+ background-position: center;
+ background-size: contain;
  left: 0;
  height: 38.3vh;
 }
-.service_sec_items img:hover,.feed_sec_items >img:hover{
-	transform: scale(1.05);
+.service_sec_items img:hover{
+	transform: scale(1.01);
 }
-.service_sec_items_text {
+.service_sec_items_text>p>a:hover{
+	transform: scale(1.2);
+}
+.service_sec_items_text{
 position: absolute;    
-background:rgba(211, 36, 26, 0.75);
+background:rgba(211, 36, 26, 0.95);
 width: 100%;
-height: 40vh;
-top:85%;
+margin-top:38.3vh;
 color: #fff;
 text-align: center;
 text-shadow: 0 1px 2px rgba(0,0,0,.6);
@@ -498,10 +506,10 @@ strong{
 	display: block;
 	position: absolute;
 	left: 15px;
-	top: -1.5px ;
+	top: -1.3px ;
 	z-index: 11;
 	width: 130px;
-	height: 82px;
+	height: 80px;
 }/*
 .home_tag_rectangle {
 	display: block;
@@ -569,14 +577,13 @@ strong{
 }*/				/*********2nd Section****************/
 
 .gall_img{
-	height:100%;
 	position: relative;
 }
 
 .gall_img img{
 	border-top-left-radius: 50px;
 	border-bottom-right-radius: 50px;
-	height: 28rem;
+	height:31rem;
 	max-height: 100%;
 	position: relative;
 	width: 100%;
@@ -775,38 +782,38 @@ strong{
 	left: 35%;
 	top: 47.8%;
 }
-.scwrect{
-	position: absolute;
-	overflow: visible;	
-	width:35.5% ;
-	height: 41vh;	
-	left: 13%;
-	top: 8.3%;
-
-}
 .advrect{
 	position: absolute;
 	overflow: visible;	
 	width:35.5% ;
-	height: 41vh;	
+	height: 38.9vh;	
 	left: 13%;
-	top: 51%;
+	top: 8.95%;
+
+}
+.scwrect{
+	position: absolute;
+	overflow: visible;	
+	width:35.5% ;
+	height: 38.9vh;	
+	left: 13%;
+	top: 51.8%;
 
 }
 .scwcontent{
-	left: 43%;
+	left: 51%;
 	position: absolute;
 	padding-right: 0;
-	width:50% ;
-	height: 42.5vh;	
-}
-.advcontent{
-	left: 48%;
-	position: absolute;
-	padding-right: 0;
-	width:44% ;
+	width:40% ;
 	height: 42.5vh;	
 	top: 51%;
+}
+.advcontent{
+	left: 46%;
+	position: absolute;
+	padding-right: 0;
+	width:45% ;
+	height: 42.5vh;		
 }
 /**********************about Page css*************************/
 a{
@@ -820,7 +827,73 @@ a:hover{
 	padding: 0;
 	outline: none;
 }
-
+.about_1st{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	
+	
+}
+.about_2nd{
+	width: 100%;
+	overflow: hidden;
+	height: 100vh;
+	position: relative;	
+}
+.about_1st .a_img_1{
+	margin-top:7%;
+	position: absolute;
+	width: 67%;
+	margin-left: 5px;
+	height: 58%;
+}
+.about_1st .a_img_2{
+	top: 65%;
+	position: absolute;
+	width:28%;
+	left: 82%;
+	height: 55%;
+}
+.about_2nd .a_img_3{	
+	position: absolute;
+	width:19%;
+	top: 16%;
+	left: 23%;
+	height: 36%;
+	overflow: hidden;
+}
+.about_2nd .a_img_4{	
+	position: absolute;
+	width:27%;
+	top: 26%;
+	left: 10%;
+	height: 60%;
+}
+.about_2nd .a_img_wwo{	
+	position: absolute;
+	width:30%;
+	top: 25%;
+	left: 58%;
+	height: 15%;
+}
+.about_1st span{
+	margin-top:12%;
+	position: absolute;
+	font-size: 5.8rem;
+	font-family: 'Merriweather', serif;
+	font-weight: 900;
+	letter-spacing: 2px;
+	left: 66%;
+}
+.about_1st p{
+	top: 77%;
+	position: absolute;
+	font-size:3.8rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 595;
+	left: 10%;
+	letter-spacing: 1.6px;
+}
 .about_bck {
 	width: 100%;
 	height: 100%;

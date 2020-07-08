@@ -853,32 +853,72 @@ a:hover{
 	top: 20%;
 }
 
-.about_1st{
+.about_1st,.aboukashi_1st{
 	width: 100%;
 	height: 100vh;
 	position: relative;	
 	overflow: hidden;
 }
-.about_1st .a_img_1{
+.about_1st .a_img_1,.aboukashi_1st .a_img_1{
 	position: absolute;
-	width: 42%;
+	width: 41.3%;
 	top: 9.8%;
-	left: 58%;
+	left: 62%;
 	height: 90vh;
+}
+.aboukashi_1st span{
+	margin-top:12%;
+	font-family: 'Merriweather', serif;
+	color:#d32411;	
+	letter-spacing: 3.5px;
+	position: absolute;	
+	font-size: 5rem;
+	font-family: 'Merriweather', serif;
+	font-weight: 900;
+	letter-spacing: 2.5px;
+	left: 20%;
+}
+.aboukashi_1st p{
+	top: 40%;
+	width: 40%;
+	position: absolute;
+	text-align: justify;
+	font-size:1.5rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 595;
+	left: 11%;
+	letter-spacing: 2px;
+	line-height: 1.75;
+}
+.aboukashi_1st .a_q_1{ 
+	position: absolute;
+	top: 25%;
+	left: 4%;
+	width: 6%;
+	height: 10%;
+	font-size:2rem;
+}
+.aboukashi_1st .a_q_2{ 
+	position: absolute;
+	top: 70%;
+	left: 52%;
+	width: 6%;
+	height: 10%;
+	font-size:2rem;
 }
 .about_1st .a_img_2{
 	top: 30%;
 	position: absolute;
-	width: 23%;
-	margin-left: -35px;
+	width: 24.5%;
+	margin-left: -20px;
 	height: 75%;
 }
 .about_1st .a_img_3{
-	top: 18%;
+	top: 15%;
 	position: absolute;	
-	left: 5.5%;
-	width: 43%;
-	height: 33%;
+	left: 10%;
+	width: 47.5%;
+	height: 40%;
 }
 /*.about_1st .a_img_4{	
 	position: absolute;	
@@ -890,22 +930,22 @@ a:hover{
 .about_2nd .a_img_1{
 	top:9.1%;
 	position: absolute;
-	width:40%;
-	left: -40px;
+	width:42%;
+	left: -25px;
 	height: 90vh;
 }
 .about_2nd .a_img_2{
-	top: 15%;
+	top: 12%;
 	position: absolute;
-	width: 40%;
-	left: 52%;
-	height: 36%;
+	width: 46%;
+	left: 44%;
+	height: 40%;
 }
 .about_2nd .a_img_3{
 	top: 30%;
 	position: absolute;	
-	left: 79%;
-	width: 23%;
+	left: 77.5%;
+	width: 24%;
 	height: 72%;
 }
 
@@ -920,7 +960,7 @@ a:hover{
 	font-family: 'Merriweather', serif;
 	font-weight: 900;
 	letter-spacing: 2px;
-	left: 44%;
+	left: 46%;
 }
 .about_2nd p{
 	top: 65%;
@@ -930,11 +970,11 @@ a:hover{
 	font-size:1.5rem;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 595;
-	left: 44%;
+	left: 46%;
 	letter-spacing: 1.6px;
 }
 .about_1st span{
-	margin-top:23%;
+	margin-top:25%;
 	font-family: 'Merriweather', serif;
 	color:#d32411;
 	text-decoration: underline;
@@ -947,7 +987,7 @@ a:hover{
 	left: 23%;
 }
 .about_1st p{
-	top: 60%;
+	top: 65%;
 	width: 33%;
 	position: absolute;
 	text-align: justify;
@@ -975,22 +1015,27 @@ a:hover{
 .col-xs-3{
 	height: 50vh;
 }
+.last_text{
+	opacity: 0;
+}
+.last_img:hover{
+	
+}
+.last_img:hover + .last_text{
+	background: transparent;
+	opacity: 1;
+	color:white;
+	cursor: pointer;
+}
 #a_gall_item{
-	width: 85%;
+	width: 95%;
 	height: 100%;
 	margin-top: 5%;
 	background: white;	
-	float: left;
+	margin-left: 2.5%;
 	overflow: hidden;
 }
-.a_gall_next{
-	width: 15%;
-	height: 100%;	
-	float: right;
-	cursor: pointer;
-	background: white;	
-	overflow: hidden;
-}
+
 .a_gall_next:hover{
 	transform: scale(1.05);
 }

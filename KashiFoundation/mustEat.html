@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Swagatam Kashi Foundation</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width=device-width ,initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet" />
+        <link rel="icon" href="img/logo.png" type="image/icon type" />
+        <script src="js/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <nav id="header-nav" class="navbar smart-scroll navbar-default">
+                <img src="img/logo.png" alt="logo" class="logo" />
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <div class="navbar-brand">
+                            <a href="home.html" class="visible-xs visible-sm visible-md visible-lg"> </a>
+                        </div>
+                        <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="collapsable-nav" class="collapse navbar-collapse">
+                        <ul id="nav-list" class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="home.html">
+                                    <br class="hidden-xs" />
+                                    Home
+                                </a>
+                            </li>
+                            <li class="dropdown about_">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="aboutsk.html#about_1st">tour advisor</a></li>
+                                    <li><a href="aboutsk.html#about_2nd">Social worker</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown about_">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Kashi <span class="caret"></span> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="knowKashi.html">Know Kashi</a></li>
+                                    <li><a href="visitingPlaces.html">Places To Visit</a></li>
+                                    <li><a href="mustEat.html">Must Eat</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown about_">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="aboutksf.html">Tour Guide</a></li>
+                                    <li><a href="aboutksf.html">Boat Service</a></li>
+                                    <li><a href="aboutksf.html">Book AArti</a></li>
+                                    <li><a href="aboutksf.html">Book Taxi</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="tourism.html">
+                                    <br class="hidden-xs" />
+                                    Gallery
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    <br class="hidden-xs" />
+                                    Contact us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <br class="visible-xs" />
+                                    <button id="donate" id="book">Book NOW</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-----Main Content------->
+        <div id="main-content" class="container-fluid">
+            <div class="vp_1st container-fluid">
+                <img src="img/mustEat/01.png" class="img_01" />
+                <img style="top: 5%;" src="img/visitingPlaces/t1.png" class="img_02" />
+
+                <div id="vp_option"></div>
+                <div class="vp_gall">
+                    <div id="vp_gall_items">
+                        <div class="col-md-3">
+                            <a href="#vp_option" onclick="show('img_1')" class="vp_gall_item">
+                                <img src="img/mustEat/001.png" alt="Norway" />
+                                <div class="vp_text">
+                                    <h3>Book AArti</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#vp_option" onclick="show('img_2')" class="vp_gall_item">
+                                <img src="img/mustEat/002.png" alt="Norway" />
+                                <div class="vp_text">
+                                    <h3>Book AArti</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#vp_option" onclick="show('img_3')" class="vp_gall_item">
+                                <img src="img/mustEat/001.png" alt="Norway" />
+                                <div class="vp_text">
+                                    <h3>Book AArti</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-3">
+                            <a href="#vp_option" onclick="show('img_4')" class="vp_gall_item">
+                                <img src="img/mustEat/002.png" alt="Norway" />
+                                <div class="vp_text">
+                                    <h3>Book AArti</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="last">
+                    <a href="#vp_option" onclick="show('img_4')" class="vp_gall_item">
+                        <img src="img/mustEat/001.png" alt="Norway" />
+                        <div class="vp_text">
+                            <h3>Book AArti</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="vp_2nd" id="vp_2nd">
+                <div id="img_1" class="img_1">
+                    <img src="img/mustEat/001.png" />
+                    <span>Explore Kashi with Me...</span>
+                    <p>
+                        अभिषेक शर्मा 'स्वागतम् काशी' के माध्‍यम से समाज सेवा के क्षेत्र में भी सक्रिय हैं। अभिषेक शर्मा के सामाजिक जीवन की शुरुआत 2012 में गंगा सेवा अभियान से हुई। यह यात्रा अब 'स्वागतम् काशी' के माध्‍यम से जारी है। वाराणसी
+                        आने वाले अतिथियों के स्वागत और सत्‍कार के लिए अभिषेक हमेशा हाजिर रहते हैं। शिक्षा, पर्यटन, गंगा और संस्कृति के लिए अभिषेक शर्मा लगातार कार्य कर रहे हैं। 'स्वागतम् काशी' वाराणसी और उसके आसपास के पर्यटन और संस्कृति के
+                        लिए कार्य करती है।'स्वागतम् काशी' वाराणसी और उसके आसपास के पर्यटन और संस्कृति के लिए कार्य करती है।'स्वागतम् काशी' वाराणसी और उसके आसपास के पर्यटन और संस्कृति के लिए कार्य करती है।'स्वागतम् काशी' वाराणसी और उसके
+                        आसपास के पर्यटन और संस्कृति के लिए कार्य करती है।
+                    </p>
+                </div>
+                <div id="img_2" class="img_2">
+                    <img src="img/mustEat/002.png" />
+                    <span>Explore Kashi with Me...</span>
+                    <p>
+                        अभिषेक शर्मा 'स्वागतम् काशी' के माध्‍यम से समाज सेवा के क्षेत्र में भी सक्रिय हैं। अभिषेक शर्मा के सामाजिक जीवन की शुरुआत 2012 में गंगा सेवा अभियान से हुई। यह यात्रा अब 'स्वागतम् काशी' के माध्‍यम से जारी है। वाराणसी
+                        आने वाले अतिथियों के स्वागत और सत्‍कार के लिए अभिषेक हमेशा हाजिर रहते हैं। शिक्षा, पर्यटन, गंगा और संस्कृति के लिए अभिषेक शर्मा लगातार कार्य कर रहे हैं। 'स्वागतम् काशी' वाराणसी और उसके आसपास के पर्यटन और संस्कृति के
+                        लिए कार्य करती है।'स्वागतम् काशी' वाराणसी और उसके आसपास के पर्यटन और संस्कृति के लिए कार्य करती है।'स्वागतम् काशी' वाराणसी और उसके आसपास के पर्यटन और संस्कृति के लिए कार्य करती है।'स्वागतम् काशी' वाराणसी और उसके
+                        आसपास के पर्यटन और संस्कृति के लिए कार्य करती है।
+                    </p>
+                </div>
+                <div id="img_3" class="img_3">
+                    <img src="img/mustEat/01.png" />
+                    <span>Explore Kashi with Me...</span>
+                    <p>
+                        अभिषेक शर्मा 'स्वागतम् काशी' के माध्‍यम से समाज सेवा के क्षेत्र में भी सक्रिय हैं। अभिषेक शर्मा के सामाजिक जीवन की शुरुआत 2012 में गंगा सेवा अभियान से हुई। यह यात्रा अब 'स्वागतम् काशी' के माध्‍यम से जारी है। वाराणसी
+                        आने वाले अतिथियों के स्वागत और सत्‍कार के लिए अभिषेक हमेशा हाजिर रहते हैं। शिक्षा, पर्यटन, गंगा और संस्कृति के लिए अभिषेक शर्मा लगातार कार्य कर रहे हैं। 'स्वागतम् काशी' वाराणसी और उसके आसपास के पर्यटन और संस्कृति के
+                        लिए कार्य करती है।'स्वागतम् काशी' वाराणसी और उसके आसपास के पर्यटन और संस्कृति के लिए कार्य करती है।'स्वागतम् काशी' वाराणसी और उसके आसपास के पर्यटन और संस्कृति के लिए कार्य करती है।'स्वागतम् काशी' वाराणसी और उसके
+                        आसपास के पर्यटन और संस्कृति के लिए कार्य करती है।
+                    </p>
+                </div>
+                <div id="img_4" class="img_4">
+                    <img src="img/mustEat/002.png" />
+                    <span>Explore Kashi with Me...</span>
+                    <p>
+                        अभिषेक शर्मा 'स्वागतम् काशी' के माध्‍यम से समाज सेवा के क्षेत्र में भी सक्रिय हैं। अभिषेक शर्मा के सामाजिक जीवन की शुरुआत 2012 में गंगा सेवा अभियान से हुई। यह यात्रा अब 'स्वागतम् काशी' के माध्‍यम से जारी है। वाराणसी
+                        आने वाले अतिथियों के स्वागत और सत्‍कार के लिए अभिषेक हमेशा हाजिर रहते हैं। शिक्षा, पर्यटन, गंगा और संस्कृति के लिए अभिषेक शर्मा लगातार कार्य कर रहे हैं। 'स्वागतम् काशी' वाराणसी और उसके आसपास के पर्यटन और संस्कृति के
+                        लिए कार्य करती है।'स्वागतम् काशी' वाराणसी और उसके आसपास के पर्यटन और संस्कृति के लिए कार्य करती है।'स्वागतम् काशी' वाराणसी और उसके आसपास के पर्यटन और संस्कृति के लिए कार्य करती है।'स्वागतम् काशी' वाराणसी और उसके
+                        आसपास के पर्यटन और संस्कृति के लिए कार्य करती है।
+                    </p>
+                </div>
+            </div>
+            <br />
+            <br />
+            <div id="bg-modal" class="bg-modal modal">
+                <div class="modal-contents">
+                    <div class="close">+</div>
+                    <form action="alert('We Will inform you as your received')">
+                        <h1 style="text-align: center;">Our Bank Details</h1>
+                        <span><strong>Account Holder Name:</strong> Swagatam Kashi Foundation</span>
+                        <span><strong>Account Number:</strong>123456789101112</span>
+                        <span><strong>Bank Ifsc Code:</strong> ########99 </span>
+                        <a href="#" class="popup_submit">Submit</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!----Footer------------>
+
+        <script type="text/javascript">
+            function show(elementId) {
+                document.getElementById("img_1").style.display = "none";
+                document.getElementById("img_2").style.display = "none";
+                document.getElementById("img_3").style.display = "none";
+                document.getElementById("img_4").style.display = "none";
+                document.getElementById(elementId).style.display = "block";
+            }
+            var modal = document.getElementById("bg-modal");
+
+            document.getElementById("donate").addEventListener("click", function () {
+                document.querySelector(".bg-modal").style.display = "flex";
+            });
+
+            document.querySelector(".close").addEventListener("click", function () {
+                document.querySelector(".bg-modal").style.display = "none";
+            });
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            };
+            $("body").css("padding-top", $(".navbar").outerHeight() + "px");
+
+            // detect scroll top or down
+            if ($(".smart-scroll").length > 0) {
+                // check if element exists
+                var last_scroll_top = 0;
+                $(window).on("scroll", function () {
+                    scroll_top = $(this).scrollTop();
+                    if (scroll_top < last_scroll_top) {
+                        $(".smart-scroll").removeClass("scrolled-down").addClass("scrolled-up");
+                    } else {
+                        $(".smart-scroll").removeClass("scrolled-up").addClass("scrolled-down");
+                    }
+                    last_scroll_top = scroll_top;
+                });
+            }
+        </script>
+        <!-- jQuery library -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

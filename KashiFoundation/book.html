@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact Us</title>
+        <title>Swagatam Kashi Foundation</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE-edge" />
         <meta name="viewport" content="width=device-width ,initial-scale=1" />
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="icon" href="img/logo.png" type="image/icon type" />
         <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet" />
+        <link rel="icon" href="img/logo.png" type="image/icon type" />
+        <script src="js/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet" />
     </head>
     <body>
-        <header>
+       <header>
             <nav id="header-nav" class="navbar smart-scroll navbar-default">
                 <img src="img/logo.png" alt="logo" class="logo" />
                 <div class="container-fluid">
@@ -84,62 +89,22 @@
                 </div>
             </nav>
         </header>
+        <!-----Main Content------->
         <div id="main-content" class="container-fluid">
-            <div class="con_sec_1">
-                <div class="social_navbar">
-                    <a href="#" class="facebook">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="#" class="twitter">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="#" class="youtube">
-                        <i class="fa fa-youtube youtube_"></i>
-                    </a>
-                    <a href="#" class="gmail">
-                        <i class="fa fa-google"></i>
-                    </a>
-                </div>
-
-                <div id="map"></div>
-                <img src="img/contactUs/01.png" id="contact_data">
-                <a href="#" class="c_phone">
-                    <i class="fa fa-volume-control-phone"></i>
-                </a>
-                <a href="#" class="c_mail">
-                    <i class="fa fa-envelope"></i>
-                </a>
-                <a href="#" class="c_address">
-                    <i class="fa fa-location-arrow"></i>
-                </a>
-                <p class="c_phone_text">
-                    789787xxxx<br />
-                    789787xxxx<br />
-                    789787xxxx
-                </p>
-                <br />
-                <p class="c_mail_text">xxxxxxx@swagatamkashi.in</p>
-                <br />
-                <p class="c_addr_text">
-                    Swagatam Kashi,<br />
-                    Dashashwamedh Ghat,<br />
-                    Varanasi, Uttar Pradesh 221001
-                    <br />
-                </p>
-
-                <script src="js/scripts.js"></script>
-                <script
-                    async
-                    defer
-                    src="https://maps.googleapis.com/maps/api/js?key= 
-               AIzaSyB2bXKNDezDf6YNVc-SauobynNHPo4RJb8&callback=initMap"
-                ></script>
-            </div>
-            <div class="con_sec_2">
-                <img src="img/contactUs/001.jpg">
-                <img src="img/contactUs/002.png" style="width: 45%;height: 40vh;top: 12%;left: 3%;">
-                <div class="textbox">
+            <div class="row">
+               <div class="book_1st">  
+                <img src="img/03.png" style="position: absolute;width: 30%;height: 90vh;top: 12%;">
+                <img src="img/01.png" style="width: 25%;position: absolute;right: 0;top:10%;height: 90vh;overflow: hidden;">                               
+                  <div class="_01">
+                        <h2><span>Fill The Below Form</span></h2>
                     <form>
+                        <select class="form-control" id="sel_ser">
+                            <option selected> -----Select services-----</option>
+                            <option value="guide">Book Tour Guide</option>
+                            <option>Book Boat Service</option>
+                            <option>Book Aarti</option>
+                            <option>Book Taxi</option>
+                        </select>
                         <label for="name">Name:</label> <br />
                         <input type="text" name="username" id="Username" /><br />
                         <label for="name">Phone Number:</label> <br />
@@ -148,13 +113,33 @@
                         <input type="text" name="email" id="email" /><br />
                         <label for="name">Address:</label> <br />
                         <input type="text" name="address" id="address" /><br />
-                        <label for="name">Message:</label> <br />
-                        <textarea rows="5" cols="50" name="Message" id="<Message"></textarea><br />
+                        <label class="msg" for="name">Message:</label> <br />
+                        <textarea rows="5" cols="50" name="Message" id="Message" class="msgtxt"></textarea><br />
                         <button type="Submit" class="submit">Submit</button>
                     </form>
                 </div>
-            </div>
-        </div>
+                <div class="_02">
+                    
+                    <h2><span>Call Us</span></h2>
+                    <div class="_02_1">
+                        <i class="fa fa-volume-control-phone"></i>
+                    <br>
+                    <a href="tel:8932027703" class="a1">                        
+                        <span>9829xxxxxx</span>
+                    </a>
+                    <br>
+                    <a href="tel:8932027703" class="a2">                        
+                        <span>9829xxxxxx</span>
+                    </a>
+                    <br>
+                    <a href="tel:8932027703" class="a3">                        
+                        <span>9829xxxxxx</span>
+                    </a>
+                    
+                    </div>
+                </div>
+                
+               </div>
         <div id="bg-modal" class="bg-modal modal">
             <div class="modal-contents">
                 <div class="close">+</div>
@@ -168,10 +153,8 @@
             </div>
         </div>
 
-        <!----Hirshi's content-------->
-        <!-- INFORMATIONPAGE -->
         <!----Footer------------>
-
+        
         <script type="text/javascript">
             var modal = document.getElementById("bg-modal");
 
